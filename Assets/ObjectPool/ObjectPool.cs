@@ -5,10 +5,12 @@ using UnityEngine;
 
 public class ObjectPool : MonoBehaviour
 {
-
+    [Tooltip("적 프리팹")]
     [SerializeField] GameObject enemyPrefab;
-    [SerializeField] int poolSize = 10;
-    [SerializeField] float spawnTime = 1f;
+    [Tooltip("오브젝트 풀 크기")]
+    [SerializeField] [Range(0, 50f)]int poolSize = 10;
+    [Tooltip("생성주기")]
+    [SerializeField] [Range(0.1f, 30f)]float spawnTime = 1f;
     GameObject[] pool;
     // Start is called before the first frame update
     void Awake()

@@ -11,8 +11,9 @@ public class CoordinateLabeler : MonoBehaviour
     TextMeshPro label;
     Vector2Int coordinates = new Vector2Int();
 
-
+    [Tooltip("건설 가능한 타일 색")]
     [SerializeField] Color defaultColor = Color.white;
+    [Tooltip("건설 불가능한 타일 색")]
     [SerializeField] Color blockColor = Color.gray;
     Waypoint waypoint;
 

@@ -3,13 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Tower))]
 public class TartgetLocator : MonoBehaviour
 {
+    [Tooltip("적을 바라보는 오브젝트")]
     [SerializeField] Transform weapon;
-    [SerializeField] Transform target;
+    [Tooltip("타워 사거리")]
     [SerializeField] float range = 15f;
+    [Tooltip("적에게 날아가는 오브젝트")]
     [SerializeField] ParticleSystem weaponParticle;
-
+    Transform target;
 
     void Start()
     {

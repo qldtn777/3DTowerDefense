@@ -8,9 +8,11 @@ using UnityEngine.SceneManagement;
 
 public class Bank : MonoBehaviour
 {
+    [Tooltip("µ∑ UI")]
     [SerializeField] TextMeshProUGUI balanceText;
-
+    [Tooltip("Ω√¿€ µ∑")]
     [SerializeField] int startBalance = 150;
+    [Tooltip("«ˆ¿Á µ∑")]
     [SerializeField] int currentBalance;
 
     public int CurrentBalance
